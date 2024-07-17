@@ -5,7 +5,7 @@ const searchInput = document.querySelector('.search-input');
 
 const fetchImages = async (query) => {
     imagesContainer.innerHTML = '';
-    const url = `https://api.unsplash.com/search/photos?query=${query}&per_page=27&client_id=${accessKey}`;
+    const url = `https://api.unsplash.com/search/photos?query=${query}&per_page=30&client_id=${accessKey}`;
     const response =  await fetch(url);
     const data = await response.json();
 
